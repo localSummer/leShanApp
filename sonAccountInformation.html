@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <script src="js/ionic.bundle.min.js"></script>
+    <style>
+       .ww p{
+           margin-left: 50px;
+       }
+       .ww{
+           background-color: #e8e8e8;
+       }
+       .yy{
+        margin-left: 20px;
+
+       }
+       .card, .list-inset{
+           margin-top: 5px;
+       }
+       .card, .list-inset{
+           margin-bottom: 10px;
+       }
+       .bar .title{
+           margin-bottom: 10px;
+       }
+
+    </style>
+</head>
+<body>
+<div class="bar bar-header">
+    <div class="button button-icon ion-ios-arrow-back"style="color: red"></div>
+  <h1 class="title">子账户详情</h1>
+</div>
+
+<div class="content has-header scroll scroll-content  ww"style="overflow-y: scroll;">
+
+    <i class="yy ">
+        子账户信息
+    </i>
+
+        <div class="list list-inset">
+
+            <label class="item item-input">
+                <span class="input-label">定期存款系列号:</span>
+
+                <p class="input-label" >001</p>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">存款类型:</span>
+
+                <p class="input-label" >定期存款</p>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">账户余额:</span>
+                <p class="input-label" style="color: red;">100.00元</p>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">
+                    币 <i style="margin-left: 30px">种:</i>
+                </span>
+                <p>人民币</p>
+            </label>
+        </div>
+
+
+        <i class="yy">定期存款信息</i>
+
+    <div class="list list-inset " >
+
+        <label class="item item-input" >
+            <span class="input-label" >
+                存<i style="margin-left: 30px">期:</i>
+            </span>
+            <p>一年</p>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">
+                利 <i style="margin-left: 30px">率:</i>
+            </span>
+            <p>1.23%</p>
+        </label>
+        <label class="item item-input">
+             <span class="input-label">
+                开户日期:
+            </span>
+            <p>2015.12.12</p>
+        </label>
+        <label class="item item-input">
+             <span class="input-label">
+                到期日期:
+            </span>
+            <p style="color: red">2016.12.12</p>
+    </label>
+        <button class="button button-block button-assertive">返回</button>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
