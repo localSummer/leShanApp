@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<link rel="stylesheet" href="css/selectPerson.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<div class="bar bar-header head">
+			<button class="button button-assertive button-clear">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title head">选择收款人</h1>
+		</div>
+
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll; background: #ececec;">
+			<div class="row has-header padding-none">
+				<div class="col col-50 first">名下账户</div>
+				<div class="col col-50 second">常用联系人</div>
+			</div>
+			<div class="padding">
+				<ion-list>
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-50 padding-vertical">
+								<span class="kahao-user">查询收款人:</span>
+							</div>
+							<div class="col col-50">
+								<label class="item item-input clear-bg">
+									<input type="text" placeholder="请输入转账金额">
+  </label>
+							</div>
+						</div>
+					</ion-item>
+				</ion-list>
+
+				<p class="fkf">付款方信息</p>
+				<div class="padding-bottom">
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>收 &nbsp;款&nbsp;人：</span>
+							</div>
+							<div class="col col-67">周正</div>
+						</div>
+					</div>
+
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>收款账号：</span>
+							</div>
+							<div class="col col-67">6222 **** **** 7350</div>
+						</div>
+					</div>
+
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>账号类型：</span>
+							</div>
+							<div class="col col-67">普通</div>
+						</div>
+					</div>
+
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>收&nbsp; 款&nbsp;行：</span>
+							</div>
+							<div class="col col-67">中国工商银行股份有限公司</div>
+						</div>
+						<div class="row">
+							<div class="col col-offset-33">四川省乐山支行</div>
+						</div>
+					</div>
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>转账类型：</span>
+							</div>
+							<div class="col col-67">普通</div>
+						</div>
+					</div>
+					<div class="sum2" style="border: none;">
+						<div class="row">
+							<div class="col col-33">
+								<span>手机账号：</span>
+							</div>
+							<div class="col col-67">18845678988</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="padding-bottom">
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>收 &nbsp;款&nbsp;人：</span>
+							</div>
+							<div class="col col-67">周正</div>
+						</div>
+					</div>
+
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>收款账号：</span>
+							</div>
+							<div class="col col-67">6222 **** **** 7350</div>
+						</div>
+					</div>
+
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>账号类型：</span>
+							</div>
+							<div class="col col-67">普通</div>
+						</div>
+					</div>
+
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>收&nbsp; 款&nbsp;行：</span>
+							</div>
+							<div class="col col-67">中国工商银行股份有限公司</div>
+						</div>
+						<div class="row">
+							<div class="col col-offset-33">四川省乐山支行</div>
+						</div>
+					</div>
+					<div class="sum2">
+						<div class="row">
+							<div class="col col-33">
+								<span>转账类型：</span>
+							</div>
+							<div class="col col-67">普通</div>
+						</div>
+					</div>
+					<div class="sum2" style="border: none;">
+						<div class="row">
+							<div class="col col-33">
+								<span>手机账号：</span>
+							</div>
+							<div class="col col-67">18845678988</div>
+						</div>
+					</div>
+				</div>
+
+				
+				
+				<button class="button button-full btn">确认选择</button>
+			</div>
+		</div>
+
+		<script>
+			var myApp = angular.module('myApp', ['ionic']);
+			myApp.controller('myCtrl', ['$scope', function($scope) {
+
+			}]);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+.bar.bar-header.head {
+  border-bottom: 1px solid #e60012;
+}
+.bar.bar-header.head .title {
+  color: #000;
+  font-family: "黑体";
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.list {
+  background: #ffffff;
+}
+.list p {
+  color: #1f1f1f;
+  font-family: '微软雅黑';
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.list p.date {
+  color: #c0c0c5;
+  font-size: 15px;
+  font-weight: normal;
+  border-bottom: 1px solid #c0c0c5;
+  padding-bottom: 10px;
+}
+.list span {
+  display: inline-block;
+  width: 50px;
+}
+.list p.person {
+  padding-left: 10px;
+}
+.list p.msg {
+  margin-top: 30px;
+}
+.list .posi {
+  padding-right: 50px;
+  color: #c0c0c5;
+  font-weight: normal;
+}
+.list .com {
+  margin-top: 20px;
+  color: #c0c0c5;
+  font-weight: normal;
+  letter-spacing: 2px;
+}

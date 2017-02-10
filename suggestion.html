@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<link rel="stylesheet" href="css/suggestion.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<div class="bar bar-header head">
+			<button class="button button-assertive button-clear">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title head">意见与建议</h1>
+		</div>
+
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll; background: #ececec;">
+			<div class="padding">
+				<ion-list>
+					<ion-item >
+					<p class="person">尊敬的客户：</p>
+							<textarea name="" rows="8" cols="" >请输入您想要对我们说的话...</textarea>
+					</ion-item>
+				</ion-list>
+
+				<button class="button button-full btn">提交</button>
+			</div>
+		</div>
+
+		<script>
+			var myApp = angular.module('myApp', ['ionic']);
+			myApp.controller('myCtrl', ['$scope', function($scope) {
+
+			}]);
+		</script>
+	</body>
+
+</html>
