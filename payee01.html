@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>tabs</title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/erweima.css"/>
+		<script src="js/ionic.bundle.js"></script>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header" >
+			<a href="#" class="button button-assertive button-clear icon ion-ios-arrow-back"></a>
+			<h1 class="title">收款人名册</h1>
+		</div>
+		
+		<div class="tabs tabs-striped  tabs-color-assertive tabs-top">
+			<div class="tab-item" ng-class="{'tab-item-active' : myActive == 'cl1'}" ng-click="myActive = 'cl1'">本行收款人</div>
+			<div class="tab-item" ng-class="{'tab-item-active' : myActive == 'cl2'}" ng-click="myActive = 'cl2'">他行收款人</div>
+			<div class="tab-item" ng-class="{'tab-item-active' : myActive == 'cl3'}" ng-click="myActive = 'cl3'">手机号收款人</div>
+		</div>
+		
+		<div class="content has-header has-tabs scroll scroll-content" style="margin-top: 48px;">
+			<div class="list padding">
+				<label class="item item-input" style="border-radius: 5px;">
+					<p class="input-label">查询收款人</p>
+					<input type="text" placeholder="请输入用户名或账单查询" />
+				</label>
+			</div>
+		</div>
+		
+		<script>
+			angular.module("myApp",["ionic"])
+				.controller("myCon",function($scope) {
+					$scope.myActive = "cl1";
+					
+				});
+		</script>
+	</body>
+</html>

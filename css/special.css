@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "microsoft yahei";
+}
+.bar {
+	border-bottom: 1px solid rgb(230,0,18);
+}
+.content{
+	overflow-y: scroll;
+	background: #EEEEEE;
+	padding-top: 30px;
+}
+.show{
+	background: #fff;
+	margin-bottom: 20px;
+	border: 1px solid #E7E7E7;
+	border-radius: 10px;
+	border-left: 5px solid rgb(230,0,18);
+}
+.showCon{
+	padding-right: 30px;
+	position: relative;
+}
+.showCon span.button{
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+.showCon span.badge{
+	border-radius: 0;
+	margin-left: 5px;
+}
+.showCon h3{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #C0C0C5;
+}
+.past .showCon span.badge{
+	background: #737373;
+	color: #fff;
+}
+.past{
+	border-left: 5px solid #737373;
+}

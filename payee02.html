@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimun-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/erweima.css"/>
+		<script type="text/javascript" src="js/ionic.bundle.js" ></script>
+		<style>
+			.bank .item img{
+				float: left;
+				margin-right: 40px;
+			}
+			.list-inset{
+				margin-top: 0;
+				margin-bottom: 0;
+				border-radius: 10px;
+			}
+			a.subdued{
+				display: block;
+				margin-top: 10px;
+				margin-left: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bar bar-header" >
+			<a href="#" class="button button-assertive button-clear icon ion-ios-arrow-back"></a>
+			<h1 class="title">选择收款人</h1>
+		</div>
+			
+		<div class="content has-header scroll scroll-content">
+			<a class="subdued">主账户信息</a>
+			<div class="list list-inset bank">
+				<div class="item item-icon-right" style="line-height: 35px;">
+					<img src="img/zly-business.jpg" height="35px"/><span >乐山商业银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;">
+					<div class="col col-30"></div>
+					<img src="img/zly-iac.jpg" height="35px"/><span>中国工商银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;">
+					<div class="col col-30"></div>
+					<img src="img/zly-agriculture.jpg" height="35px"/><span>中国农业银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;">
+					<div class="col col-30"></div>
+					<img src="img/zly-build.jpg" height="35px"/><span>建设银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;">
+					<div class="col col-30"></div>
+					<img src="img/zly-China.jpg" height="35px"/><span>中国银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;">
+					<div class="col col-30"></div>
+					<img src="img/zly-attract.jpg" height="35px"/><span>招商银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+			</div>
+			
+			<a class="subdued">查询信息</a>
+			<div class="list list-inset">
+				<label class="item item-input" style="border-radius: 5px;">
+					<p class="input-label">关键字</p>
+					<input type="text" placeholder="请输入用户名或账单查询" />
+				</label>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			angular.module("myApp",["ionic"])
+				.controller("myCon",["$scope",function($scope){
+					$scope.myActive = "cl1";
+				}])
+		</script>
+	</body>
+</html>

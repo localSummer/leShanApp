@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "microsoft yahei";
+}
+.bar{
+	border-bottom: 1px solid rgb(230,0,18);
+	height: 43px;
+}
+.bar h1.title{
+	font-weight: bold;
+}
+.content{
+	overflow-y: scroll;
+	height: 100%;
+	background: rgb(237,237,237);
+}
+.contentCon{
+	background: #fff;
+	border-radius: 5px;
+	margin: 30px 10px;
+	height: 300px;
+	text-align: center;
+	color: rgb(183,183,183);
+}
+a.setting{
+	color: rgb(230,0,18);
+	border: 1px solid rgb(230,0,18);
+	border-radius: 15px;
+	padding: 3px;
+}

@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "microsoft yahei";
+	background: #F5F5F5;
+}
+
+.new {
+	background: #E60012;
+	font-size: 10px;
+	color: #fff;
+	display: inline-block;
+}
+
+.newfont {
+	color: #4C4C4C;
+	font-size: 14px;
+}
+
+.col {
+	margin: 5px;
+	border-radius: 6px;
+}
+
+.row img {
+	height: 60px;
+	margin-top: 10px;
+}
+
+.row a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.tabs img {
+	height: 30px;
+}
+
+.scan {
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	margin-left: -25px;
+	z-index: 100;
+}
+
+.tabs {
+	border-top: 1px solid #E60012 !important;
+	background: #fff;
+}
