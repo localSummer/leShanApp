@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<link rel="stylesheet" href="css/turnFixDate.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<div class="bar bar-header head">
+			<button class="button button-assertive button-clear">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title head">活期转定期</h1>
+		</div>
+
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll; background: #ececec;">
+			<div class="row has-header padding-none">
+				<div class="col col-50 first">活期转定期</div>
+				<div class="col col-50 second">定期转活期</div>
+			</div>
+			<div class="padding">
+
+				<p class="fkf">付款方信息</p>
+				<ion-list>
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">付款账户:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input">
+									<input type="text" placeholder="请选择">
+    <span>
+    	<i class="icon ion-ios-arrow-down placeholder-icon"></i>
+    </span>
+    
+  </label>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao" style="border-bottom: none;">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">可用余额:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input clear-bg">
+									<input type="text" placeholder="请选择">
+  </label>
+							</div>
+						</div>
+					</ion-item>
+
+				</ion-list>
+			</div>
+			
+			<div class="padding">
+
+				<p class="fkf">交易信息</p>
+				<ion-list>
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">存&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input">
+									<input type="text" placeholder="请选择">
+    <span>
+    	<i class="icon ion-ios-arrow-down placeholder-icon"></i>
+    </span>
+    
+  </label>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">利&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;率:</span>
+							</div>
+						</div>
+					</ion-item>
+					
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">转存金额:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input clear-bg">
+									<input type="text" placeholder="请输入转存金额">
+  </label>
+							</div>
+						</div>
+					</ion-item>
+					
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">大写金额:</span>
+							</div>
+						</div>
+					</ion-item>
+					
+					<ion-item class="padding-left-right">
+						<div class="row kahao stage" >
+							<div class="col col-33 ">
+								<span class="kahao-user">自动转存:</span>
+							</div>
+							<div class="col col-67  " style="padding-left: 20px;">
+								<div class="row">
+									<div class="col col-50">
+										<input type="radio" name="sex" /> 是
+									</div>
+									<div class="col col-50"><input type="radio" name="sex" checked="checked" /> 否</div>
+								</div>
+							</div>
+						</div>
+					</ion-item>
+					<button class="button button-full btn">下一步</button>
+				</ion-list>
+			</div>
+
+			
+		</div>
+
+		<script>
+			var myApp = angular.module('myApp', ['ionic']);
+			myApp.controller('myCtrl', ['$scope', function($scope) {
+
+			}]);
+		</script>
+	</body>
+
+</html>

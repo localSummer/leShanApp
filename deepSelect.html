@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<link rel="stylesheet" href="css/deepSelect.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<div class="bar bar-header head">
+			<button class="button button-assertive button-clear">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title head">明细查询</h1>
+		</div>
+
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll; background: #ececec;">
+			<div class="row has-header padding-none">
+				<div class="col col-33 first">全部</div>
+				<div class="col col-33 second">收入</div>
+				<div class="col col-33 third">支出</div>
+			</div>
+			<div class="padding">
+				<div class="sum">
+					<h2 class="h2">跨行转账
+						<span class="distance" >+100.00元</span>
+					</h2>
+					<div class="padd">
+						<p class="road">
+							<i class="icon ion-ios-arrow-right"></i>
+						</p>
+					</div>
+					<p class="shopSum">2015.12.12
+						<span style="margin-right: 8px;">余额：200.00元</span>
+					</p>
+				</div>
+				
+				<div class="sum">
+					<h2 class="h2">跨行转账
+						<span class="distance">+100.00元</span>
+					</h2>
+					<div class="padd">
+						<p class="road">
+							<i class="icon ion-ios-arrow-down"></i>
+						</p>
+					</div>
+					<p class="shopSum">2015.12.12
+						<span>余额：200.00元</span>
+					</p>
+				</div>
+			</div>
+			
+			<div class="padding">
+				<div class="sum2 bg">
+					<div class="row">
+						<div class="col col-33">
+							<span>对方银行：</span>
+						</div>
+						<div class="col col-offset-10">中国银行</div>
+					</div>
+				</div>
+				<div class="sum2 bg">
+					<div class="row">
+						<div class="col col-33">
+							<span>对方户名：</span>
+						</div>
+						<div class="col col-offset-10">周正</div>
+					</div>
+				</div>
+				
+				<div class="sum2 bg">
+					<div class="row">
+						<div class="col col-33">
+							<span>对方账号：</span>
+						</div>
+						<div class="col col-offset-10">6228 **** **** 8888</div>
+					</div>
+				</div>
+				
+				<div class="sum2 bg">
+					<div class="row">
+						<div class="col col-33">
+							<span>转账用途：</span>
+						</div>
+						<div class="col col-offset-10">周末</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="padding">
+				<div class="sum sub">
+					<h2 class="h2">跨行转账
+						<span class="distance">-100.00元</span>
+					</h2>
+					<div class="padd">
+						<p class="road">
+							<i class="icon ion-ios-arrow-right"></i>
+						</p>
+					</div>
+					<p class="shopSum">2015.12.12
+						<span>余额：200.00元</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var myApp = angular.module('myApp', ['ionic']);
+			myApp.controller('myCtrl', ['$scope', function($scope) {
+
+			}]);
+		</script>
+	</body>
+
+</html>
