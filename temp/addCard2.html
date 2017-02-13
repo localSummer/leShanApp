@@ -1,0 +1,46 @@
+<ion-view view-title="银行卡激活" ng-controller="addCard2Ctrl">
+	<ion-header-bar class="bar bar-header" style="border-bottom: 1px solid red;">
+		<button ng-click="back()" class="button button-clear icon ion-ios-arrow-back button-assertive"></button>
+		<h1 class="title" style="font-weight: bold;">银行卡激活</h1>
+	</ion-header-bar>
+	<ion-content style="background: #E8E8E8;">
+		<div class="list list-inset">
+			<div class="item item-button-right" style="position: relative;">
+				身份证正面:
+				<img src="img/zy01.png" alt="" style="width:54px;height: 40px;position: absolute;left: 150px;bottom: 5px;" />
+				<button class="button button-assertive">
+						<i class="icon ion-ios-camera"></i>
+					</button>
+			</div>
+			<div class="item item-button-right">
+				身份证反面:
+				<button class="button button-assertive">
+						<i class="icon ion-ios-camera"></i>
+					</button>
+			</div>
+			<div class="item item-button-right">
+				手持身份证照片:
+				<button class="button button-assertive">
+						<i class="icon ion-ios-camera"></i>
+					</button>
+			</div>
+			<div class="item">
+				<div class="card" style="height: 100px ;background: #EEEEEE;text-align: center;">
+					<button class="button button-assertive icon ion-android-add" style="margin-top: 25px;">						
+					</button>
+
+				</div>
+			</div>
+		</div>
+		<div class="padding">
+			<button class="button button-block button-assertive" ui-sref="tabs.addCard3">下一步</button>
+		</div>
+		<div class="list list-inset">
+			<div class="item item-text-wrap">
+				<h3 style="color: red;">温馨提示:</h3>
+				<p class="" style="color: #C0C0C0;font-size: 12px;">请上传小的照片啊，大小不得超超请上传小的照片啊，大小不得请上传小的照片啊，大小不得请上传小的照片啊，大小不得</p>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

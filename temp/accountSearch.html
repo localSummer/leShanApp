@@ -1,0 +1,43 @@
+<ion-view view-title="账户查询" ng-controller="accountSearchCtrl">
+	<ion-header-bar style="border-bottom: 1px solid red;">
+		<button ng-click="back()" class="button button-clear icon ion-ios-arrow-back button-assertive"></button>
+		<h1 class="title">账户查询</h1>
+	</ion-header-bar>
+	<ion-content style="overflow-y: scroll;background: #EEEEEE;">
+		<div class="row">
+			<div class="col col-50">
+				<button class="button button-block button-clear button-assertive" style="background: white;border-bottom: 1px solid red;">账户一览</button>
+			</div>
+			<div class="col col-50">
+				<button ui-sref="tabs.deepmsg" class="button   button-block">交易明细</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-20">
+
+			</div>
+			<div class="col">我的借记卡</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-10"></div>
+			<div class="col" style="text-align: center;"  ui-sref="tabs.msg">
+				<img src="img/zy02.png" alt="" class="full-image" style="height: 150px;" />
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col col-20"></div>
+			<div class="col">我的借记卡</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-10"></div>
+			<div class="col" style="text-align: center; ">
+				<img src="img/zy03.png" class="full-image" alt="" style="height: 150px;" />
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-view view-title="登录" ng-controller="loginCtrl">
+	<div class="bar bar-header " style="border-bottom: 1px solid rgb(233,32,48);">
+		<button class="button button-assertive button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+		<h1 class="title">用户登录</h1>
+		<button class="button button-clear" ui-sref="tabs.regist" style="color: red;">注册</button>
+	</div>
+
+	<div class="content has-header scroll scroll-content" style=" background-color: rgb(245,245,245);padding: 5px;">
+		<div class="row">
+			<div class="col"><img class="full-image" src="img/11.png" /></div>
+		</div>
+
+		<div class="list">
+			<label class="item item-input">
+				<i class="icon ion-person  placeholder-icon"></i>
+			    <input type="text"placeholder="请输入登录名称">
+			  </label>
+			<label class="item item-input">
+				<i class="icon ion-locked  placeholder-icon"></i>
+			    <input type="password"placeholder="密码">
+			  </label>
+		</div>
+		<button class="button button-full button-assertive">登录</button>
+		<ion-checkbox style="background-color: rgb(245,245,245);border: 0;padding: 0; padding-left: 40px;">
+			<div class="button button-clear " style="color: red;">记住登录名</div>
+		</ion-checkbox>
+		
+		<button ui-sref="tabs.forgetPassword" class="button button-clear " style="color: red;float: right; margin-top: -45px; position: relative; z-index: 100;">忘记密码</button>
+
+	</div>
+</ion-view>

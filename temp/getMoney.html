@@ -1,0 +1,47 @@
+<ion-view view-title="选择收款人" ng-controller="getMoneyCtrl">
+	<div class="getMoney">
+		<ion-header-bar>
+			<a href="#" class="button button-assertive button-clear icon ion-ios-arrow-back" ng-click="back()"></a>
+			<h1 class="title">选择收款人</h1>
+		</ion-header-bar>
+
+		<ion-content style="background: #E8E8E8;">
+			<a class="subdued">主账户信息</a>
+			<div class="list list-inset bank">
+				<div class="item item-icon-right" style="line-height: 35px;" ui-sref="tabs.getPerson">
+					<img src="img/zly-business.jpg" height="35px" /><span>乐山商业银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;" ui-sref="tabs.getPerson">
+					<img src="img/zly-iac.jpg" height="35px" /><span>中国工商银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;" ui-sref="tabs.getPerson">
+					<img src="img/zly-agriculture.jpg" height="35px" /><span>中国农业银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;" ui-sref="tabs.getPerson">
+					<img src="img/zly-build.jpg" height="35px" /><span>建设银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;" ui-sref="tabs.getPerson">
+					<img src="img/zly-China.jpg" height="35px" /><span>中国银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+				<div class="item item-icon-right" style="line-height: 35px;" ui-sref="tabs.getPerson">
+					<img src="img/zly-attract.jpg" height="35px" /><span>招商银行</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</div>
+			</div>
+
+			<a class="subdued">查询信息</a>
+			<div class="list list-inset">
+				<label class="item item-input" style="border-radius: 5px;">
+					<p class="input-label">关键字</p>
+					<input type="text" placeholder="请输入用户名或账单查询" />
+				</label>
+			</div>
+		</ion-content>
+
+	</div>
+</ion-view>

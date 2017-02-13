@@ -1,0 +1,24 @@
+<ion-view view-title="意见与建议" ng-controller="suggestionCtrl">
+	<div class="suggestion">
+		<ion-header-bar class=" head">
+			<button class="button button-assertive button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title head">意见与建议</h1>
+		</ion-header-bar>
+
+		<ion-content style="overflow-y: scroll; background: #ececec;">
+			<div class="padding">
+				<ion-list>
+					<ion-item>
+						<p class="person">尊敬的客户：</p>
+						<textarea name="" rows="8" cols="">请输入您想要对我们说的话...</textarea>
+					</ion-item>
+				</ion-list>
+
+				<button ui-sref="tabs.suggestionSuccess" class="button button-full btn">提交</button>
+			</div>
+		</ion-content>
+
+	</div>
+</ion-view>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
 	<head>
 		<meta charset="UTF-8">
@@ -8,116 +8,10 @@
 		<link rel="stylesheet" href="css/ionic.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<script src="js/ionic.bundle.min.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 
-	<body>
-		<div class="bar bar-header bar-one">
-			<button class="button button-clear logoPar">
-				<img class="logo" src="img/w-logo.png"/>
-			</button>
-			<h1 class="title head">
-  				乐山市商业银行 
-  			</h1>
-			<button class="button button-clear persion">
-  				<i class="icon ion-ios-person-outline"></i>
-			</button>
-
-		</div>
-
-		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
-			<div class="list list-bottom">
-				<div class="item item-body banner">
-					<img class="full-image" src="img/w-banner1.png">
-				</div>
-			</div>
-			<div class="padding padding-left-right">
-				<h4>快捷通道</h4>
-				<div class="row tongdao">
-					<div class="col">
-						<img style="margin-top: -10px;" src="img/w-book.png" alt="" />
-						<p>账户管理</p>
-					</div>
-					<div class="col">
-						<img class="" src="img/w-arrow.png" alt="" />
-						<p>转账汇款</p>
-					</div>
-					<div class="col">
-						<img class="" src="img/w-shuqian.png" />
-						<p>信用卡</p>
-					</div>
-					<div class="col last-child">
-						<img class="" src="img/w-water.png" alt="" />
-						<p>生活缴费</p>
-					</div>
-				</div>
-
-				<div class="row tongdao" style="margin-top: 1%;">
-					<div class="col">
-						<img style="margin-top: -10px;" src="img/w-book.png" alt="" />
-						<p>账户管理</p>
-					</div>
-					<div class="col">
-						<img class="" src="img/w-arrow.png" alt="" />
-						<p>转账汇款</p>
-					</div>
-					<div class="col">
-						<img class="" src="img/w-shuqian.png" />
-						<p>信用卡</p>
-					</div>
-					<div class="col last-child">
-						<img class="" src="img/w-water.png" alt="" />
-						<p>生活缴费</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="padding padding-left-right">
-				<h4 style="margin-top: 5%;">精选商城</h4>
-				<div class="list" style="margin-bottom: 10px;">
-					<div class="item" style="padding: 0; border: none;">
-						<img src="img/w-banner2.png" class="full-image" alt="" />
-					</div>
-				</div>
-
-				<div class="row tongdao shop">
-					<div class="col">
-						<img src="img/w-list1.png" class="full-image" />
-					</div>
-					<div class="col">
-						<img class="full-image" src="img/w-list2.png" alt="" />
-					</div>
-					<div class="col">
-						<img class="full-image" src="img/w-list3.png" alt="" />
-					</div>
-				</div>
-			</div>
-
-			<div class="padding padding-left-right">
-				<h4 style="margin-top: 5%;">爆款酒店</h4>
-				<div class="list" style="margin-bottom: 10px;">
-					<div class="item" style="padding: 0; border: none;">
-						<img src="img/w-banner2.png" class="full-image" alt="" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="tabs tabs-icon-top tabs-stable">
-			<a class="tab-item assertive" style="font-weight: bold;">
-				<i class="icon ion-ios-person-outline "></i> 我的账户
-			</a>
-			<a class="tab-item">
-				<i class="icon ion-android-phone-portrait"></i> 移动金融
-			</a>
-			<a class="tab-item assertive sm">
-				<i class="icon ion-android-expand"></i> 扫一扫
-			</a>
-			<a class="tab-item">
-				<i class="icon ion-star"></i> e起精彩
-			</a>
-			<a class="tab-item">
-				<i class="icon ion-social-usd"></i> 投资理财
-			</a>
-		</div>
+	<body ng-controller="myCtrl">
+		<ion-nav-view></ion-nav-view>
 	</body>
-
 </html>

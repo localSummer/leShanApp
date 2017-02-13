@@ -1,0 +1,76 @@
+<view-title view-title="账户详情" ng-controller="msgCtrl">
+	<div class="msgCtrl">
+		<ion-header-bar>
+			<div ng-click="back()" class="button button-icon ion-ios-arrow-back" style="color: red"></div>
+			<h1 class="title" style="font-weight: bold;">账户详情</h1>
+			<button class="button button-clear button-assertive" style="font-size: 14px;" ui-sref="tabs.sonMsg">子账户详情</button>
+		</ion-header-bar>
+
+		<ion-content style="background: #E8E8E8">
+
+			<i class="yy">
+        主账户信息
+    </i>
+
+			<div class="list list-inset">
+
+				<label class="item item-input">
+                <span class="input-label">定期存款系列号:</span>
+
+                <p class="input-label" >001</p>
+            </label>
+				<label class="item item-input">
+                <span class="input-label">存款类型:</span>
+
+                <p class="input-label" >定期存款</p>
+            </label>
+				<label class="item item-input">
+                <span class="input-label">账户余额:</span>
+                <p class="input-label" style="color: red;">100.00元</p>
+            </label>
+				<label class="item item-input">
+                <span class="input-label">
+                    币 <i style="margin-left: 30px">种:</i>
+                </span>
+                <p>人民币</p>
+            </label>
+			</div>
+
+			<i class="yy">定期存款信息</i>
+
+			<div class="list list-inset ">
+
+				<label class="item item-input">
+            <span class="input-label" >
+                存<i style="margin-left: 30px">期:</i>
+            </span>
+            <p>一年</p>
+        </label>
+				<label class="item item-input">
+            <span class="input-label">
+                利 <i style="margin-left: 30px">率:</i>
+            </span>
+            <p>1.23%</p>
+        </label>
+				<label class="item item-input">
+             <span class="input-label">
+                开户日期:
+            </span>
+            <p>2015.12.12</p>
+        </label>
+				<label class="item item-input">
+             <span class="input-label">
+                到期日期:
+            </span>
+            <p style="color: red">2016.12.12</p>
+    </label>
+
+			</div>
+			<div class="padding">
+				<button class="button button-block button-assertive" ng-click="back()">返回</button>
+			</div>
+
+		</ion-content>
+	</div>
+
+</view-title>

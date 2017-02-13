@@ -1,0 +1,30 @@
+<ion-view view-title="二维码" ng-controller="erweimaCtrl">
+	<ion-header-bar style="border-bottom: 1px solid red;">
+		<button class="button button-clear icon ion-ios-arrow-back button-assertive" ng-click="back()"></button>
+		<h1 class="title">生成二维码</h1>
+	</ion-header-bar>
+	<ion-content style="overflow-y: scroll;background: #EEEEEE;">
+		<p style="margin-top: 20px;text-indent: 18px;">请选择你要生生的二维码的账户信息</p>
+		<div class="list list-inset" style="margin-top: 0;padding-top: 0;border: 1px solid red;">
+			<div class="item " style="background: rgb(250,236,236)" ui-sref="tabs.erweima2">
+				<img src="img/zy04.png" alt="" />
+				<span style="float: right;margin-top: 10px;">借记卡</span>
+			</div>
+			<div class="item" style="background: rgb(250,236,236); padding-top: 20px;" ui-sref="tabs.erweima2">
+				<span>324322432***42343</span>
+				<span style="float: right;margin: 10px 0;">工资卡</span>
+			</div>
+		</div>
+		<div class="list list-inset">
+			<div class="item ">
+				<img src="img/zy05.png" alt="" />
+				<span style="float: right;margin-top: 10px;">借记卡</span>
+			</div>
+			<div class="item" style="padding-top: 20px;">
+				<span>324322432***42343</span>
+				<span style="float: right;margin: 10px 0;">工资卡</span>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

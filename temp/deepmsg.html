@@ -1,0 +1,50 @@
+<ion-view view-title="交易明细" ng-controller="deepmsgCtrl">
+	<div class="deepmsg">
+		<ion-header-bar>
+			<button ng-click="back()" class="button button-assertive button-clear button-icon ion-ios-arrow-back"></button>
+			<h2 class="title" style="font-weight: normal;">明细查询</h2>
+		</ion-header-bar>
+
+		<div class="tabs tabs-striped  tabs-color-assertive tabs-top">
+			<div class="tab-item" ui-sref="tabs.accountSearch">账户一览</div>
+			<div class="tab-item tab-item-active">交易明细</div>
+		</div>
+
+		<div class="content has-header has-tabs scroll scroll-content" style="overflow-y: scroll;margin-top: 68px; background: #E8E8E8;">
+			<div class="list list-inset">
+				<div class="item">
+					<div class="row">
+						<div class="col col-33">账&nbsp;&nbsp;&nbsp;号:</div>
+						<div class="col col-67" style="font-size: 0; margin-top: 5px;">
+							<span class="choice" class="subdued">请选择</span>
+							<span class="button-icon ion-ios-arrow-down sh"></span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="speed">快速查询:</div>
+					<div class="row require">
+						<div class="col col-offset-5 col-25" style="letter-spacing: 10px;margin-right="5%">当天</div>
+						<div class="col col-offset-10 col-25">近一周</div>
+						<div class="col col-offset-10 col-25">近一月</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col col-33">开始时间：</div>
+						<div class="col col-67"><input type="text" placeholder="请设置开始时间" /></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col col-33">结束时间：</div>
+						<div class="col col-67"><input type="text" placeholder="请设置结束时间" /></div>
+					</div>
+				</div>
+			</div>
+			<div style="padding-left: 5px;padding-right: 5px;">
+				<button class="button button-block button-assertive" ui-sref="tabs.deepmsg2">查 询</button>
+			</div>
+		</div>
+	</div>
+</ion-view>

@@ -1,0 +1,196 @@
+<ion-view view-title="转账汇款" ng-controller="transferMoneyCtrl">
+	<div class="transferMoney">
+
+		<ion-header-bar class=" head">
+			<button class="button button-assertive button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+			<h1 class="title head">转账汇款</h1>
+		</ion-header-bar>
+
+		<ion-content style="overflow-y: scroll; background: #ececec;">
+			<div class="padding">
+				<p class="fkf">付款方信息</p>
+				<ion-list>
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">付款账号:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input">
+									<input type="text" placeholder="6228 **** **** 8888" style="padding-right: 18px;">
+    <span>
+    	<i class="icon ion-ios-arrow-down placeholder-icon"></i>
+    </span>
+    
+  </label>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">别&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</span>
+							</div>
+							<div class="col col-67 col-offset-20 padding-vertical">
+								<p class="username">周正</p>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">币&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;种:</span>
+							</div>
+							<div class="col col-67 col-offset-20 padding-vertical">
+								<p class="username">人民币</p>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">转账金额:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input clear-bg">
+									<input type="text" placeholder="请输入转账金额">
+  </label>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">金额大写:</span>
+							</div>
+							<div class="col col-67 col-offset-20 padding-vertical">
+								<p class="username"></p>
+							</div>
+						</div>
+					</ion-item>
+				</ion-list>
+			</div>
+
+			<div class="padding">
+				<p class="fkf">收款方信息</p>
+				<ion-list>
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div ui-sref="tabs.getMoney" style="position: absolute; width: 35px; height: 35px; right: 3%; top: 16%;z-index: 101;"></div>
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">收款账号:</span>
+							</div>
+							<div class="col col-67">
+								<label class="item item-input clear-bg">
+									<input type="text" placeholder="请选择">
+    <span class="clearbg" >
+    	<i class="icon ion-person placeholder-icon" ></i>
+    </span>
+    
+  </label>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">转 &nbsp;账&nbsp;额:</span>
+							</div>
+							<div class="col col-67 col-offset-20 padding-vertical">
+								<p class="username" style="color: #df0005;letter-spacing: 1px;">237</p>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">转账类型:</span>
+							</div>
+							<div class="col col-67 col-offset-20 padding-vertical">
+								<input type="radio" name="sex" checked="checked" /> 实时
+								<input type="radio" name="sex" /> 普通
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input item-body">
+						<div class="row kahao">
+							<div class="col stable-border">
+								<p class="tips"><span>温馨提示：</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vitae natus provident iste id doloremque cupiditate.</p>
+							</div>
+						</div>
+					</ion-item>
+
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">收&nbsp;款 &nbsp;行:</span>
+							</div>
+							<div class="col col-67 padding-vertical">
+								<p class="leshan">乐山市商业银行
+									<i class="icon ion-ios-arrow-right"></i>
+								</p>
+							</div>
+						</div>
+					</ion-item>
+
+					<li class="item item-toggle kahao" style="padding-left: 10px;">
+						<span class="kahao-user">短信通知：</span>
+						<label class="toggle toggle-assertive">
+       						<input type="checkbox" checked="checked">
+					       <div class="track">
+					         <div class="handle"></div>
+					       </div>
+     					</label>
+					</li>
+
+					<li class="item item-toggle kahao" style="padding-left: 10px;">
+						<span class="kahao-user">保存收款人：</span>
+						<label class="toggle toggle-assertive">
+       						<input type="checkbox">
+					       <div class="track">
+					         <div class="handle"></div>
+					       </div>
+     					</label>
+					</li>
+				</ion-list>
+			</div>
+
+			<div class="padding">
+				<p class="fkf">交易信息</p>
+				<ion-list>
+					<ion-item class="padding-left-right item-input">
+						<div class="row kahao">
+							<div class="col col-33 padding-vertical">
+								<span class="kahao-user">付款账号:</span>
+							</div>
+							<div class="col col-50">
+								<label class="item item-input">
+									<input type="text" placeholder="请选择">
+    <span>
+    	<i class="icon ion-ios-arrow-down placeholder-icon"></i>
+    </span>
+    
+  </label>
+							</div>
+
+							<div class="col"  ui-sref="tabs.accountMangement">
+								<span class="padding-vertical" style="display: block; padding-top: 10px; color: #bfbfc5; font-weight: bold; width: 40px;">其他</span>
+							</div>
+						</div>
+					</ion-item>
+					<button class="button button-block button-assertive" style="margin-top: 30px; margin-bottom: 30px;" ui-sref="tabs.handlePassword">
+  					下一步
+					</button>
+				</ion-list>
+			</div>
+		</ion-content>
+</ion-view>
