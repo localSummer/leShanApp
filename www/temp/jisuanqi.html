@@ -1,0 +1,61 @@
+<ion-view view-title="理财计算器" ng-controller="jisuanqiCtrl">
+	<ion-header-bar style="border-bottom: 1px solid rgb(233,32,48);">
+		<div class="button assertive button-icon  ion-ios-arrow-back " ng-click="back()"></div>
+		<h1 class="title">理财计算器</h1>
+		<button class="button button-clear button-assertive" style="font-family: '微软雅黑'; font-size: 15px;" ui-sref="tabs.order">产品预约</button>
+	</ion-header-bar>
+	<ion-content style=" background-color: rgb(245,245,245);padding: 5px;font-size: 18px;">
+		<div style="width: 90%;height: 80%;background: white;margin: 5%;">
+			<div class="list" style="margin-bottom: 0;">
+				<label class="item item-input item-select" style="margin: 2px;">
+			    <div class="input-label"> 币&nbsp;&nbsp;&nbsp;&nbsp;种:</div>
+			    <select style="width: 250px;height:50px;background: rgb(245,245,245);">
+			      <option selected >请选择</option>
+			      <option >aa</option>
+			      <option>bb</option>
+			    </select>
+			  </label>
+			</div>
+
+			<div class="list" style="margin-bottom: 0;">
+				<label class="item item-input item-select" style="margin: 2px;">
+			    <div class="input-label"> 种&nbsp;&nbsp;&nbsp;&nbsp;类:</div>
+			    <select style="width: 250px;height:50px;background: rgb(245,245,245);">
+			      <option selected >请选择</option>
+			      <option >aa</option>
+			      <option>bb</option>
+			    </select>
+			  </label>
+			</div>
+
+			<label class="item item-input " style="margin: 2px;">
+			    <div class="input-label">起止日期:</div>
+			  	<input type="text"placeholder="请输入起止日期" />
+			  </label>
+
+			<label class="item item-input " style="margin: 2px;">
+			    <div class="input-label">结束日期:</div>
+			  	<input type="text"placeholder="请输入起止日期" />
+			  </label>
+
+			<label class="item item-input " style="margin: 2px;">
+			    <div class="input-label">利率存期:</div>
+			  	<input type="text"placeholder="请输入起止日期" />
+			  </label>
+
+			<label class="item item-input " style="margin: 2px;">
+			    	<div class="input-label">利率存期:</div>
+			  		<input type="text"placeholder="请输入起止日期" />
+			  	</label>
+
+			<div style="height: 40px;text-align: center;line-height: 40px;">
+				<p style="float: left;margin-left: 5%;">利率选择:</p>
+				<input type="radio" name="money" id="" value="" /><label for="">自动</label>
+				<div style="float: right;margin-right: 20px;"><input type="radio" name="money" id="" value="" /><label for="">手动输入</label></div>
+			</div>
+
+			<button class="button button-full button-assertive">计算</button>
+		</div>
+	</ion-content>
+
+</ion-view>

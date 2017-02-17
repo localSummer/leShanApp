@@ -1,0 +1,48 @@
+<ion-view view-title="登录" ng-controller="loginCtrl">
+	<ion-header-bar style="border-bottom: 1px solid rgb(233,32,48);">
+		<button class="button button-assertive button-clear" ng-click="back()">
+				<i class="icon ion-ios-arrow-left"></i>
+			</button>
+		<h1 class="title">用户登录</h1>
+		<button class="button button-clear" ui-sref="tabs.regist" style="color: red;">注册</button>
+	</ion-header-bar>
+
+	<ion-content style=" background-color: rgb(245,245,245);padding: 5px;">
+		<div class="row">
+			<div class="col"><img class="full-image" src="img/11.png" /></div>
+		</div>
+
+		<div class="list">
+			<form name="myForm">
+				<label class="item item-input">
+					<i class="icon ion-person  placeholder-icon"></i>
+				    <input type="text" name="username" placeholder="请输入登录名称" ng-minlength="4" ng-maxlength="10" ng-pattern="/^[a-zA-Z]{1}[a-zA-Z0-9]+/" autocomplete="off" ng-model="user.username">
+				</label>
+				<p class="bg-danger" ng-show="myForm.username.$invalid && myForm.username.$dirty">用户名为4-10位字符之间，首字母必须为英文字符</p>
+
+				<label class="item item-input">
+					<i class="icon ion-locked  placeholder-icon"></i>
+				    <input type="password"placeholder="密码" name="password" ng-model="user.password" ng-minlength="6" ng-maxlength="16" ng-pattern="/^[a-zA-Z0-9]+/" autocomplete="off">
+				</label>
+				<p class="bg-danger" ng-show="myForm.password.$invalid && myForm.password.$dirty">密码由6-16英文数字组成</p>
+
+				<button class="button button-full button-assertive" ng-disabled="(myForm.$invalid || myForm.username.$pristine || myForm.password.$pristine) && agree" ng-click="login()">登录</button>
+				<button class="button button-clear" ng-disabled="(myForm.$invalid || myForm.username.$pristine || myForm.password.$pristine) && agree">
+						<ion-checkbox style="background-color: rgb(245,245,245);border: 0;padding: 0; padding-left: 40px;" ng-model="isClick" ng-click="setStorage()">
+							<div class="button button-clear " style="color: red;">记住登录名</div>
+						</ion-checkbox>
+				</button>
+
+				<button ui-sref="tabs.forgetPassword" class="button button-clear " style="color: red;float: right; position: relative; z-index: 100;">忘记密码</button>
+			</form>
+		</div>
+
+	</ion-content>
+	<div class="wraper">
+		<div class="box"></div>
+		<div class="spinner">
+			<div class="cube1"></div>
+			<div class="cube2"></div>
+		</div>
+	</div>
+</ion-view>

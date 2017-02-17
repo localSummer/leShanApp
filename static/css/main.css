@@ -1,0 +1,228 @@
+.index body {
+  font-family: "微软雅黑";
+}
+.index .bar .title {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #231815;
+  padding-left: 28px;
+}
+.index .bar {
+  background-size: 100% 0;
+}
+.index .bar.bar-header.bar-one {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.index .bar .button.button-clear {
+  color: #e55050;
+}
+.index .bar .button.button-clear.logoPar {
+  padding-left: 40px;
+}
+.index .bar .button.button-clear.persion {
+  padding-right: 10px;
+}
+.index .logo {
+  margin-top: -13px;
+  transform: scale(0.5);
+}
+.index .list.list-bottom {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.index .item.item-body.banner {
+  padding: 0;
+  border: none;
+}
+.index .padding.padding-left-right {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.index .padding.padding-left-right h4 {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #0c0306;
+  letter-spacing: 2px;
+}
+.index .tongdao {
+  padding-top: 0;
+  text-align: center;
+}
+.index .tongdao img {
+  transform: scale(0.9);
+}
+.index .tongdao .col {
+  border: 1px solid #ceced2;
+  margin-right: 2%;
+  border-radius: 5%;
+  position: relative;
+  height: 100px;
+}
+.index .tongdao .col.img img {
+  width: 50px;
+  height: 45px;
+}
+.index .tongdao .last-child {
+  margin-right: 0;
+}
+.index .tongdao p {
+  color: #5e5e5e;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-right: 10%;
+}
+.index .shop .col {
+  height: auto;
+}
+.index .ion-android-phone-portrait:before,
+.index .ion-star:before,
+.index .ion-social-usd:before {
+  font-size: 25px;
+  padding-top: 5px;
+}
+.tab-item-active {
+  color: #EF473A;
+}
+.tabs {
+  border-top: 1px solid #ef473a !important;
+  background-size: 100% 0;
+}
+.tabs-stable > .tabs,
+.tabs.tabs-stable {
+  border-color: #EF473A;
+}
+.tab-item.assertive.sm {
+  border: 1px solid #ef473a;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -20px;
+  background: #F8F8F8;
+  margin-left: -30px;
+  margin-top: -12px;
+  padding-top: 5px;
+  opacity: 1;
+}
+.forgetPassword .bar.bar-header.head {
+  border-bottom: 1px solid #e60012;
+}
+.forgetPassword .bar.bar-header.head .title {
+  color: #000;
+  font-family: "黑体";
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.forgetPassword .bar.bar-header.head .regis {
+  font-size: 15px;
+  font-weight: bold;
+}
+.forgetPassword .box {
+  margin-bottom: 10px;
+}
+.forgetPassword .box p {
+  text-align: center;
+  margin-bottom: 0;
+  color: #dadada;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.forgetPassword .box .scale img {
+  transform: scale(0.45);
+  position: absolute;
+  top: -2px;
+  right: -18px;
+}
+.forgetPassword .box .col {
+  border-bottom: 3px solid #c5c5c5;
+  padding-bottom: 0;
+}
+.forgetPassword .box .box-active {
+  border-color: #e60012;
+  position: relative;
+}
+.forgetPassword .box .box-active p {
+  color: #e60012;
+}
+.forgetPassword .padding {
+  padding-bottom: 0;
+}
+.forgetPassword .padding .item {
+  border: none;
+  margin-top: 0;
+}
+.forgetPassword .padding .padding-left-right {
+  padding: 10px 0;
+}
+.forgetPassword .padding .fkf {
+  margin-top: 10px;
+  color: #9b9b9b;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.forgetPassword .padding .kahao {
+  border-bottom: 1px solid #c0c0c5;
+  margin-bottom: 1px;
+}
+.forgetPassword .padding .kahao .kahao-user {
+  color: #231815;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.forgetPassword .padding .kahao .username {
+  color: #9b9b9b;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.forgetPassword .padding .kahao .tips {
+  color: #9b9b9b;
+}
+.forgetPassword .padding .kahao .tips span {
+  color: #df0005;
+  font-weight: bold;
+}
+.forgetPassword .padding .item.item-input {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 5px;
+}
+.forgetPassword .padding .item.item-input .clear-bg {
+  background: none;
+  border: none;
+}
+.forgetPassword .padding .item.item-input label {
+  background: #f5f5f5;
+}
+.forgetPassword .padding .item.item-input label span {
+  display: inline-block;
+  height: 100%;
+  width: 50px;
+  background: #e60012;
+  text-align: center;
+}
+.forgetPassword .padding .item.item-input label i {
+  border: none;
+  color: #fff;
+  font-size: 25px;
+}
+.forgetPassword .padding-vertical {
+  padding-top: 12px;
+}
+.forgetPassword .mTop .list {
+  margin-top: 15px;
+}
+.forgetPassword .regis-btn {
+  z-index: 100;
+  right: 12px;
+  border-radius: 5px;
+}

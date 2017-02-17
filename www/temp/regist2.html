@@ -1,0 +1,65 @@
+<ion-view view-title="注册" ng-controller="registCtrl2">
+	<ion-header-bar>
+		<button ng-click="back()" class="button button-assertive button-icon ion-ios-arrow-back button-clear"></button>
+		<div class="h1 title">自助注册</div>
+	</ion-header-bar>
+	<ion-content style="overflow-y: scroll;background: #EEEEEE;">
+		<div class="row" style="text-align: center">
+			<div class="col col-33" style="border-bottom: 1px solid red;">信息录入</div>
+			<div class="col col-33" style="border-bottom: 1px solid red;">密码设置</div>
+			<div class="col col-33">注册完成</div>
+		</div>
+		<div class="list list-inset" style="background: lightpink;">
+
+			<div class="row" style="border-bottom: 1px solid #EEEEEE;">
+				<div class="col col-40">姓 <i style="margin-left: 20px;">名:</i> </div>
+				<div class="col">周正</div>
+			</div>
+			<div class="row" style="border-bottom: 1px solid #EEEEEE;">
+				<div class="col col-40">证件类型:</div>
+				<div class="col">身份证</div>
+			</div>
+			<div class="row" style="border-bottom: 1px solid #EEEEEE;">
+				<div class="col col-40">证件号码:</div>
+				<div class="col">223344455544433333</div>
+			</div>
+			<div class="row" style="border-bottom: 1px solid #EEEEEE;">
+				<div class="col col-40">账号类型:</div>
+				<div class="col">借记卡</div>
+			</div>
+			<div class="row" style="border-bottom: 1px solid #EEEEEE;">
+				<div class="col col-40">账 <i style="margin-left: 20px;">号:</i></div>
+				<div class="col">2233******33333</div>
+			</div>
+			<div class="row">
+				<div class="col col-40">手&nbsp;机&nbsp;号:</div>
+				<div class="col">1312432432</div>
+			</div>
+		</div>
+		<div class="list list-inset">
+			<form action="" name="myForm">
+				<label class="item item-input">
+					<span class="input-label">设置登录密码:</span>
+					<input name="password" type="password" ng-model="user.password" placeholder="请输入6-16位字母数字混合" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">确认登录密码:</span>
+					<input name="conpassword" type="password" ng-model="user.conpassword" placeholder="请输入证件号码"/>
+				</label>
+				<label class="item item-input">
+					<span class="input-label">预留信息:</span>
+					<input name="pre" ng-model="user.pre" type="text" placeholder="请设置预留信息" />
+				</label>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col col-50">
+				<button class="button button-assertive button-block" ui-sref="tabs.regist3"  ng-disabled="myForm.$invalid || myForm.password.$pristine || myForm.conpassword.$pristine || myForm.pre.$pristine">下一步</button>
+			</div>
+			<div class="col col-50">
+				<button class="button button-assertive button-block" ng-click="back()">返回</button>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>
